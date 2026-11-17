@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Giỏ Hàng Mua Sắm Sáp Thơm OrganiWax">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giỏ Hàng Của Bạn | OrganiWax</title>
+
+  <link rel="stylesheet" href="Styles/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="Styles/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="Styles/style.css" type="text/css">
+</head>
+
+<body>
+  <!-- Humberger Menu Overlay for Mobile -->
+  <div class="humberger__menu__overlay"></div>
+  <div class="humberger__menu__wrapper">
+    <div class="humberger__menu__close"><i class="fa fa-close"></i></div>
+    <div class="humberger__menu__logo" style="margin-bottom: 25px;">
+      <a href="index.html"><img src="Images/logo.svg" alt="OrganiWax Logo" style="width: 170px;"></a>
+    </div>
+    <div class="humberger__menu__cart" style="margin-bottom: 25px;">
+      <ul>
+        <li><a href="shop-grid.html"><i class="fa fa-heart"></i> <span class="wishlist-count-badge">0</span></a></li>
+        <li><a href="shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span class="cart-count-badge">0</span></a></li>
+      </ul>
+      <div class="header__cart__price">Giỏ hàng: <span class="cart-total-price">0₫</span></div>
+    </div>
+    <nav class="humberger__menu__nav">
+      <ul>
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="shop-grid.html">Cửa Hàng</a></li>
+        <li class="active"><a href="shoping-cart.html">Giỏ Hàng</a></li>
+        <li><a href="checkout.html">Thanh Toán</a></li>
+        <li><a href="blog.html">Bài Viết</a></li>
+        <li><a href="contact.html">Liên Hệ</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <div class="header__top__left">
+              <ul>
+                <li><i class="fa fa-envelope"></i> contact@organiwax.vn</li>
+                <li>Miễn phí vận chuyển cho đơn hàng từ 300.000₫</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="header__top__right">
+              <div class="header__top__right__social">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </div>
+              <div class="header__top__right__language">
+                <img src="Images/vietnam-flag.svg" alt="Tiếng Việt">
+                <div>Tiếng Việt</div>
+                <span class="fa fa-angle-down"></span>
+                <ul>
+                  <li><a href="#">Tiếng Việt</a></li>
+                  <li><a href="#">English</a></li>
+                </ul>
+              </div>
+              <div class="header__top__right__auth">
+                <a href="contact.html"><i class="fa fa-user"></i> Đăng Nhập</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-3 col-md-4">
+          <div class="header__logo">
+            <a href="index.html"><img src="Images/logo.svg" alt="OrganiWax"></a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-8">
+          <nav class="header__menu">
+            <ul>
+              <li><a href="index.html">Trang Chủ</a></li>
+              <li><a href="shop-grid.html">Cửa Hàng</a></li>
+              <li class="active">
+                <a href="#">Trang <i class="fa fa-angle-down"></i></a>
+                <ul class="header__menu__dropdown">
+                  <li><a href="shop-details.html?id=5">Chi Tiết Sản Phẩm</a></li>
+                  <li><a href="shoping-cart.html">Giỏ Hàng</a></li>
+                  <li><a href="checkout.html">Thanh Toán</a></li>
+                  <li><a href="blog-details.html">Chi Tiết Blog</a></li>
+                </ul>
+              </li>
+              <li><a href="blog.html">Bài Viết</a></li>
+              <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-3">
+          <div class="header__cart">
+            <ul>
+              <li><a href="shop-grid.html"><i class="fa fa-heart"></i> <span class="wishlist-count-badge">0</span></a></li>
+              <li><a href="shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span class="cart-count-badge">0</span></a></li>
+            </ul>
+            <div class="header__cart__price">Giỏ hàng: <span class="cart-total-price">0₫</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="humberger__open">
+        <i class="fa fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb Section Begin -->
+  <section class="breadcrumb-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="breadcrumb__text">
+            <h2>Giỏ Hàng Của Bạn</h2>
+            <div class="breadcrumb__option">
+              <a href="index.html">Trang Chủ</a>
+              <span>Giỏ Hàng</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Breadcrumb Section End -->
+
+  <!-- Shoping Cart Section Begin -->
+  <section class="shoping-cart spad">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="shoping__cart__table">
+            <table>
+              <thead>
+                <tr>
+                  <th class="shoping__product">Sản Phẩm Sáp Thơm</th>
+                  <th>Đơn Giá</th>
+                  <th>Số Lượng</th>
+                  <th>Thành Tiền</th>
+                  <th>Xóa</th>
+                </tr>
+              </thead>
+              <tbody id="cartTableBody">
+                <!-- Dynamically populated by cart.js -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="shoping__cart__btns" style="display: flex; justify-content: space-between; margin-bottom: 40px;">
+            <a href="shop-grid.html" class="primary-btn cart-btn">TIẾP TỤC MUA SẮM</a>
+            <a href="javascript:void(0)" onclick="renderCartPage()" class="primary-btn cart-btn cart-btn-right"><i class="fa fa-retweet"></i> CẬP NHẬT GIỎ HÀNG</a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="shoping__discount">
+            <h5>Mã Giảm Giá Voucher</h5>
+            <form onsubmit="applyCoupon(event)">
+              <input type="text" id="couponInput" placeholder="Nhập mã voucher (Thử: ORGANISAP)...">
+              <button type="submit" class="site-btn">ÁP DỤNG</button>
+            </form>
+            <p style="font-size: 13px; color: #7fad39; margin-top: 8px;">💡 <i>Mẹo: Nhập mã <b>ORGANISAP</b> để được giảm ngay 10% tổng đơn hàng!</i></p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="shoping__checkout">
+            <h5>Tổng Kết Đơn Hàng</h5>
+            <ul>
+              <li>Tạm tính: <span id="cartSubtotal">0₫</span></li>
+              <li>Giảm giá voucher: <span id="cartDiscount" style="color: #7fad39;">0₫</span></li>
+              <li>Phí giao hàng: <span id="cartShipping">Miễn phí</span></li>
+              <li class="total">Tổng cộng: <span id="cartTotal">0₫</span></li>
+            </ul>
+            <a href="checkout.html" class="primary-btn">TIẾN HÀNH THANH TOÁN</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Shoping Cart Section End -->
+
+  <!-- Footer Section Begin -->
+  <footer class="footer spad">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="footer__about">
+            <div class="footer__about__logo">
+              <a href="index.html"><img src="Images/logo.svg" alt="OrganiWax" style="width: 190px;"></a>
+            </div>
+            <ul>
+              <li><b>Địa chỉ:</b> 123 Đường Hương Sắc, Quận 1, TP. Hồ Chí Minh</li>
+              <li><b>Hotline:</b> +84 987 654 321</li>
+              <li><b>Email:</b> support@organiwax.vn</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+          <div class="footer__widget">
+            <h6>Liên Kết Nhanh</h6>
+            <ul>
+              <li><a href="index.html">Về Chúng Tôi</a></li>
+              <li><a href="shop-grid.html">Cửa Hàng Sáp Thơm</a></li>
+              <li><a href="shoping-cart.html">Giỏ Hàng An Toàn</a></li>
+              <li><a href="checkout.html">Giao Hàng & Đổi Trả</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <div class="footer__widget">
+            <h6>Bản Tin Khuyến Mãi</h6>
+            <p>Đăng ký nhận mã voucher 20% cho đơn hàng tiếp theo.</p>
+            <form onsubmit="event.preventDefault(); showToast('Đăng ký nhận voucher thành công!');">
+              <input type="email" placeholder="Email của bạn..." required>
+              <button type="submit" class="site-btn">ĐĂNG KÝ</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="footer__copyright">
+            <div class="footer__copyright__text">
+              <p>Bản quyền &copy; 2026 <b>OrganiWax</b>. Tất cả quyền được bảo lưu.</p>
+            </div>
+            <div class="footer__copyright__payment">
+              <img src="Images/payment-methods.svg" alt="Cổng thanh toán">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="cartToast" class="toast-msg"></div>
+  <script src="Scripts/cart.js"></script>
+  <script src="Scripts/main.js"></script>
+</body>
+</html>

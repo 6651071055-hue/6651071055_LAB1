@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Chi Tiết Sáp Thơm Thiên Nhiên OrganiWax">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi Tiết Sản Phẩm | OrganiWax</title>
+
+  <link rel="stylesheet" href="Styles/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="Styles/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="Styles/style.css" type="text/css">
+</head>
+
+<body>
+  <!-- Humberger Menu Overlay for Mobile -->
+  <div class="humberger__menu__overlay"></div>
+  <div class="humberger__menu__wrapper">
+    <div class="humberger__menu__close"><i class="fa fa-close"></i></div>
+    <div class="humberger__menu__logo" style="margin-bottom: 25px;">
+      <a href="index.html"><img src="Images/logo.svg" alt="OrganiWax" style="width: 170px;"></a>
+    </div>
+    <div class="humberger__menu__cart" style="margin-bottom: 25px;">
+      <ul>
+        <li><a href="shop-grid.html"><i class="fa fa-heart"></i> <span class="wishlist-count-badge">0</span></a></li>
+        <li><a href="shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span class="cart-count-badge">0</span></a></li>
+      </ul>
+      <div class="header__cart__price">Giỏ hàng: <span class="cart-total-price">0₫</span></div>
+    </div>
+    <nav class="humberger__menu__nav">
+      <ul>
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="shop-grid.html">Cửa Hàng</a></li>
+        <li><a href="shoping-cart.html">Giỏ Hàng</a></li>
+        <li><a href="checkout.html">Thanh Toán</a></li>
+        <li><a href="blog.html">Bài Viết</a></li>
+        <li><a href="contact.html">Liên Hệ</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <div class="header__top__left">
+              <ul>
+                <li><i class="fa fa-envelope"></i> contact@organiwax.vn</li>
+                <li>Miễn phí vận chuyển cho đơn hàng từ 300.000₫</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="header__top__right">
+              <div class="header__top__right__social">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </div>
+              <div class="header__top__right__language">
+                <img src="Images/vietnam-flag.svg" alt="Tiếng Việt">
+                <div>Tiếng Việt</div>
+                <span class="fa fa-angle-down"></span>
+                <ul>
+                  <li><a href="#">Tiếng Việt</a></li>
+                  <li><a href="#">English</a></li>
+                </ul>
+              </div>
+              <div class="header__top__right__auth">
+                <a href="contact.html"><i class="fa fa-user"></i> Đăng Nhập</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-3 col-md-4">
+          <div class="header__logo">
+            <a href="index.html"><img src="Images/logo.svg" alt="OrganiWax"></a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-8">
+          <nav class="header__menu">
+            <ul>
+              <li><a href="index.html">Trang Chủ</a></li>
+              <li><a href="shop-grid.html">Cửa Hàng</a></li>
+              <li class="active">
+                <a href="#">Trang <i class="fa fa-angle-down"></i></a>
+                <ul class="header__menu__dropdown">
+                  <li><a href="shop-details.html?id=5">Chi Tiết Sản Phẩm</a></li>
+                  <li><a href="shoping-cart.html">Giỏ Hàng</a></li>
+                  <li><a href="checkout.html">Thanh Toán</a></li>
+                  <li><a href="blog-details.html">Chi Tiết Blog</a></li>
+                </ul>
+              </li>
+              <li><a href="blog.html">Bài Viết</a></li>
+              <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-3">
+          <div class="header__cart">
+            <ul>
+              <li><a href="shop-grid.html"><i class="fa fa-heart"></i> <span class="wishlist-count-badge">0</span></a></li>
+              <li><a href="shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span class="cart-count-badge">0</span></a></li>
+            </ul>
+            <div class="header__cart__price">Giỏ hàng: <span class="cart-total-price">0₫</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="humberger__open">
+        <i class="fa fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section Normal -->
+  <section class="hero hero-normal">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="hero__categories">
+            <div class="hero__categories__all">
+              <i class="fa fa-bars"></i>
+              <span>TẤT CẢ DANH MỤC</span>
+              <i class="fa fa-angle-down"></i>
+            </div>
+            <ul>
+              <li><a href="shop-grid.html">🌸 Sáp Treo Tủ Quần Áo</a></li>
+              <li><a href="shop-grid.html">🚗 Sáp Thơm Treo Xe Ô Tô</a></li>
+              <li><a href="shop-grid.html">🔥 Sáp Cam Quế & Hồi</a></li>
+              <li><a href="shop-grid.html">🌿 Sáp Hoa Khô Nghệ Thuật</a></li>
+              <li><a href="shop-grid.html">🕯️ Nến Thơm Sáp Đậu Nành</a></li>
+              <li><a href="shop-grid.html">✨ Sáp Khử Mùi & Thư Giãn</a></li>
+              <li><a href="shop-grid.html">🎁 Set Quà Tặng Thủ Công</a></li>
+              <li><a href="shop-grid.html">🏮 Đèn Xông Sáp & Phụ Kiện</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="hero__search">
+            <div class="hero__search__form">
+              <form action="shop-grid.html" method="GET" style="display: flex; width: 100%;">
+                <div class="hero__search__categories">
+                  Tất cả danh mục
+                  <span class="fa fa-angle-down"></span>
+                </div>
+                <input type="text" id="heroSearchInput" name="search" placeholder="Bạn muốn tìm loại sáp thơm nào?">
+                <button type="submit" id="heroSearchBtn" class="site-btn">TÌM KIẾM</button>
+              </form>
+            </div>
+            <div class="hero__search__phone">
+              <div class="hero__search__phone__icon">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div class="hero__search__phone__text">
+                <h5>+84 987 654 321</h5>
+                <span>Hỗ trợ tư vấn 24/7</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breadcrumb Section Begin -->
+  <section class="breadcrumb-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="breadcrumb__text">
+            <h2>Chi Tiết Sản Phẩm</h2>
+            <div class="breadcrumb__option">
+              <a href="index.html">Trang Chủ</a>
+              <a href="shop-grid.html">Cửa Hàng</a>
+              <span id="detailBreadcrumb">Sáp Bánh Donut & Bánh Quy Bơ Handmade</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Breadcrumb Section End -->
+
+  <!-- Product Details Section Begin (Real Photos) -->
+  <section class="product-details spad">
+    <div class="container">
+      <div class="row">
+        <!-- Gallery Column -->
+        <div class="col-lg-6 col-md-6">
+          <div class="product__details__pic">
+            <div class="product__details__pic__item">
+              <img id="detailBigImg" src="Images/product-5.jpg" alt="Sáp Thơm OrganiWax">
+            </div>
+            <div class="product__details__pic__slider">
+              <img src="Images/thumb-1.jpg" alt="Thumb 1" class="active">
+              <img src="Images/thumb-2.jpg" alt="Thumb 2">
+              <img src="Images/thumb-3.jpg" alt="Thumb 3">
+              <img src="Images/thumb-4.jpg" alt="Thumb 4">
+            </div>
+          </div>
+        </div>
+
+        <!-- Info Column -->
+        <div class="col-lg-6 col-md-6">
+          <div class="product__details__text">
+            <h3 id="detailTitle">Sáp Bánh Donut & Bánh Quy Bơ Handmade</h3>
+            <div class="product__details__rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <span>(41 đánh giá của khách hàng)</span>
+            </div>
+            <div class="product__details__price">
+              <span id="detailPrice">85.000₫</span>
+              <span class="old" id="detailOldPrice">110.000₫</span>
+            </div>
+            <p id="detailDesc">Thiết kế đúc nổi bánh donut phủ cốm và bánh quy bơ thơm béo như tiệm bánh Pháp cổ điển, kèm dây ruy băng đỏ xinh xắn trên khoanh gỗ mộc tự nhiên. Giúp tủ quần áo và góc làm việc luôn thơm ngát ngọt ngào suốt 90 ngày.</p>
+            
+            <div class="product__details__quantity">
+              <div class="quantity">
+                <div class="pro-qty">
+                  <span class="qtybtn" onclick="changeDetailQty(-1)">-</span>
+                  <input type="text" id="detailQty" value="1" readonly>
+                  <span class="qtybtn" onclick="changeDetailQty(1)">+</span>
+                </div>
+              </div>
+            </div>
+            <button id="detailAddToCartBtn" class="primary-btn">THÊM VÀO GIỎ HÀNG</button>
+            <a href="javascript:void(0)" onclick="addToWishlist(5)" class="heart-icon"><i class="fa fa-heart"></i></a>
+            
+            <div class="product__details__widget">
+              <ul>
+                <li><b>Tình trạng kho:</b> <span style="color: #7fad39; font-weight: 700;">Còn hàng (Sẵn sàng giao)</span></li>
+                <li><b>Giao hàng:</b> Giao hỏa tốc 2h tại TP.HCM & Freeship từ 300k</li>
+                <li><b>Kích thước trung bình:</b> 9cm x 7cm</li>
+                <li><b>Danh mục:</b> <span id="detailCat">Sáp Treo Tủ Quần Áo</span></li>
+                <li><b>Hương thơm chủ đạo:</b> <span id="detailScent">Bánh Quy Bơ & Vani Béo Ngậy</span></li>
+                <li><b>Thời gian lưu hương:</b> 60 - 90 ngày liên tục</li>
+                <li>
+                  <b>Chia sẻ:</b>
+                  <div class="share" style="display: inline-block;">
+                    <a href="#" style="margin-right: 12px;"><i class="fa fa-facebook"></i></a>
+                    <a href="#" style="margin-right: 12px;"><i class="fa fa-instagram"></i></a>
+                    <a href="#" style="margin-right: 12px;"><i class="fa fa-pinterest"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Details Tabs Section (Organi Style) -->
+        <div class="col-lg-12">
+          <div class="product__details__tab">
+            <ul class="nav nav-tabs">
+              <li><a class="active" href="#tabs-1">Mô Tả Sản Phẩm</a></li>
+              <li><a href="#tabs-2">Thông Tin Chi Tiết</a></li>
+              <li><a href="#tabs-3">Đánh Giá (41)</a></li>
+            </ul>
+            <div class="tab-content">
+              <!-- Tab 1 -->
+              <div class="tab-pane" id="tabs-1" style="display: block;">
+                <div class="product__details__tab__desc">
+                  <h6>🌿 Nguồn Gốc & Sự Tinh Tế Của Sáp Thơm Thủ Công</h6>
+                  <p>Mỗi miếng sáp thơm OrganiWax được đúc tay tỉ mỉ từ 100% sáp đậu nành hữu cơ nguyên chất, kết hợp cùng tinh dầu thiên nhiên cao cấp đạt chuẩn an toàn IFRA. Bánh sáp được tạo hình nghệ thuật tỉ mỉ mô phỏng bánh donut và cookie bơ Pháp, mang đến cảm giác ngọt ngào, ấm cúng và đầy sức sống.</p>
+                  <p><b>Công dụng vượt trội:</b></p>
+                  <ul>
+                    <li>✓ Ướp hương nhẹ nhàng, tự nhiên cho quần áo, chăn ga mà không gây nồng hắc.</li>
+                    <li>✓ Khử sạch mùi ẩm mốc, xua đuổi gián và côn trùng nhỏ nhờ tinh dầu thảo mộc.</li>
+                    <li>✓ Giúp thư giãn tinh thần, tạo cảm giác thư thái sau một ngày dài làm việc.</li>
+                    <li>✓ Thiết kế sang trọng kèm ruy băng và khoanh gỗ mộc, là món quà tặng tinh tế cho người thân, bạn bè.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Tab 2 -->
+              <div class="tab-pane" id="tabs-2" style="display: none;">
+                <div class="product__details__tab__desc">
+                  <h6>Bảng Thông Số Kỹ Thuật</h6>
+                  <table class="table" style="max-width: 600px; margin-top: 15px;">
+                    <tr><td><b>Chất liệu sáp:</b></td><td>100% Sáp đậu nành hữu cơ (Soy wax)</td></tr>
+                    <tr><td><b>Tinh dầu:</b></td><td>Hương Vani, Bơ Pháp & Thảo mộc tự nhiên</td></tr>
+                    <tr><td><b>Kích thước:</b></td><td>9cm x 7cm</td></tr>
+                    <tr><td><b>Trọng lượng:</b></td><td>~80 gram</td></tr>
+                    <tr><td><b>Bảo quản:</b></td><td>Nơi khô ráo, tránh ánh nắng trực tiếp hoặc nhiệt độ trên 45°C</td></tr>
+                    <tr><td><b>Hạn sử dụng:</b></td><td>24 tháng kể từ ngày sản xuất</td></tr>
+                  </table>
+                </div>
+              </div>
+
+              <!-- Tab 3 -->
+              <div class="tab-pane" id="tabs-3" style="display: none;">
+                <div class="product__details__tab__desc">
+                  <h6>Đánh Giá Của Khách Hàng Đã Mua Hàng</h6>
+                  <div style="margin-top: 20px;">
+                    <div style="border-bottom: 1px solid #eee; padding-bottom: 15px; margin-bottom: 15px;">
+                      <b style="color: #1c1c1c;">Trần Thu Hà</b> <span style="color:#7fad39; font-size:12px;">✓ Đã mua hàng tại OrganiWax</span>
+                      <div style="color: #edbb0e; font-size: 13px; margin: 4px 0;">★★★★★</div>
+                      <p style="margin: 0;">Sáp thơm hình bánh donut xinh xỉu luôn shop ơi! Mùi thơm béo ngọt ngào như tiệm bánh, mở tủ quần áo ra là thơm phức!</p>
+                    </div>
+                    <div style="border-bottom: 1px solid #eee; padding-bottom: 15px; margin-bottom: 15px;">
+                      <b style="color: #1c1c1c;">Nguyễn Hoàng Nam</b> <span style="color:#7fad39; font-size:12px;">✓ Đã mua hàng tại OrganiWax</span>
+                      <div style="color: #edbb0e; font-size: 13px; margin: 4px 0;">★★★★★</div>
+                      <p style="margin: 0;">Hình ảnh thật 100% y hệt ngoài đời, để trên khoanh gỗ nhìn vintage và sang chảnh lắm.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Player Section -->
+        <div class="col-lg-12">
+          <div class="video__section">
+            <div class="section-title text-left" style="margin-bottom: 20px;">
+              <h2 style="font-size: 26px;">🎬 Video Giới Thiệu Quy Trình Chế Tác Sáp Thơm Thủ Công</h2>
+              <p>Khám phá cách nghệ nhân OrganiWax tuyển chọn sáp đậu nành và đúc sáp tạo hình nghệ thuật.</p>
+            </div>
+            <video controls poster="Images/hero-banner.jpg">
+              <source src="Videos/intro-wax.mp4" type="video/mp4">
+              Trình duyệt của bạn không hỗ trợ thẻ video.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Product Details Section End -->
+
+  <!-- Related Product Section Begin -->
+  <section class="related-product spad">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-title related__product__title">
+            <h2>Sản Phẩm Tương Tự Bạn Sẽ Thích</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="featured__item">
+            <div class="featured__item__pic">
+              <a href="shop-details.html?id=1"><img src="Images/product-1.jpg" alt="Sáp Lavender"></a>
+              <ul class="featured__item__pic__hover">
+                <li><a href="javascript:void(0)" onclick="addToWishlist(1)"><i class="fa fa-heart"></i></a></li>
+                <li><a href="shop-details.html?id=1"><i class="fa fa-retweet"></i></a></li>
+                <li><a href="javascript:void(0)" onclick="addToCart(1)"><i class="fa fa-shopping-bag"></i></a></li>
+              </ul>
+            </div>
+            <div class="featured__item__text">
+              <h6><a href="shop-details.html?id=1">Sáp Treo Tủ Lavender Pháp</a></h6>
+              <h5>135.000₫</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="featured__item">
+            <div class="featured__item__pic">
+              <a href="shop-details.html?id=3"><img src="Images/product-3.jpg" alt="Sáp Cam Quế Hồi"></a>
+              <ul class="featured__item__pic__hover">
+                <li><a href="javascript:void(0)" onclick="addToWishlist(3)"><i class="fa fa-heart"></i></a></li>
+                <li><a href="shop-details.html?id=3"><i class="fa fa-retweet"></i></a></li>
+                <li><a href="javascript:void(0)" onclick="addToCart(3)"><i class="fa fa-shopping-bag"></i></a></li>
+              </ul>
+            </div>
+            <div class="featured__item__text">
+              <h6><a href="shop-details.html?id=3">Sáp Treo Cam Quế & Hồi</a></h6>
+              <h5>95.000₫</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="featured__item">
+            <div class="featured__item__pic">
+              <a href="shop-details.html?id=2"><img src="Images/product-2.jpg" alt="Sáp Treo Xe Đàn Hương"></a>
+              <ul class="featured__item__pic__hover">
+                <li><a href="javascript:void(0)" onclick="addToWishlist(2)"><i class="fa fa-heart"></i></a></li>
+                <li><a href="shop-details.html?id=2"><i class="fa fa-retweet"></i></a></li>
+                <li><a href="javascript:void(0)" onclick="addToCart(2)"><i class="fa fa-shopping-bag"></i></a></li>
+              </ul>
+            </div>
+            <div class="featured__item__text">
+              <h6><a href="shop-details.html?id=2">Sáp Treo Xe Gỗ Đàn Hương</a></h6>
+              <h5>155.000₫</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="featured__item">
+            <div class="featured__item__pic">
+              <a href="shop-details.html?id=7"><img src="Images/product-7.jpg" alt="Set Quà 4 Mùa"></a>
+              <ul class="featured__item__pic__hover">
+                <li><a href="javascript:void(0)" onclick="addToWishlist(7)"><i class="fa fa-heart"></i></a></li>
+                <li><a href="shop-details.html?id=7"><i class="fa fa-retweet"></i></a></li>
+                <li><a href="javascript:void(0)" onclick="addToCart(7)"><i class="fa fa-shopping-bag"></i></a></li>
+              </ul>
+            </div>
+            <div class="featured__item__text">
+              <h6><a href="shop-details.html?id=7">Set Hộp Quà Sáp Thơm 4 Mùa</a></h6>
+              <h5>360.000₫</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Related Product Section End -->
+
+  <!-- Footer Section Begin -->
+  <footer class="footer spad">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="footer__about">
+            <div class="footer__about__logo">
+              <a href="index.html"><img src="Images/logo.svg" alt="OrganiWax" style="width: 190px;"></a>
+            </div>
+            <ul>
+              <li><b>Địa chỉ:</b> 123 Đường Hương Sắc, Quận 1, TP. Hồ Chí Minh</li>
+              <li><b>Hotline:</b> +84 987 654 321</li>
+              <li><b>Email:</b> support@organiwax.vn</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+          <div class="footer__widget">
+            <h6>Liên Kết Nhanh</h6>
+            <ul>
+              <li><a href="index.html">Về Chúng Tôi</a></li>
+              <li><a href="shop-grid.html">Cửa Hàng Sáp Thơm</a></li>
+              <li><a href="shoping-cart.html">Giỏ Hàng An Toàn</a></li>
+              <li><a href="checkout.html">Giao Hàng & Đổi Trả</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <div class="footer__widget">
+            <h6>Bản Tin Khuyến Mãi</h6>
+            <p>Đăng ký nhận mã voucher 20% cho đơn hàng tiếp theo.</p>
+            <form onsubmit="event.preventDefault(); showToast('Đăng ký nhận voucher thành công!');">
+              <input type="email" placeholder="Email của bạn..." required>
+              <button type="submit" class="site-btn">ĐĂNG KÝ</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="footer__copyright">
+            <div class="footer__copyright__text">
+              <p>Bản quyền &copy; 2026 <b>OrganiWax</b>. Tất cả quyền được bảo lưu.</p>
+            </div>
+            <div class="footer__copyright__payment">
+              <img src="Images/payment-methods.svg" alt="Cổng thanh toán">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="cartToast" class="toast-msg"></div>
+  <script src="Scripts/cart.js"></script>
+  <script src="Scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Thanh Toán Đơn Hàng Sáp Thơm OrganiWax">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thanh Toán Đơn Hàng | OrganiWax</title>
+
+  <link rel="stylesheet" href="Styles/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="Styles/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="Styles/style.css" type="text/css">
+</head>
+
+<body>
+  <!-- Humberger Menu Overlay for Mobile -->
+  <div class="humberger__menu__overlay"></div>
+  <div class="humberger__menu__wrapper">
+    <div class="humberger__menu__close"><i class="fa fa-close"></i></div>
+    <div class="humberger__menu__logo" style="margin-bottom: 25px;">
+      <a href="index.html"><img src="Images/logo.svg" alt="OrganiWax Logo" style="width: 170px;"></a>
+    </div>
+    <div class="humberger__menu__cart" style="margin-bottom: 25px;">
+      <ul>
+        <li><a href="shop-grid.html"><i class="fa fa-heart"></i> <span class="wishlist-count-badge">0</span></a></li>
+        <li><a href="shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span class="cart-count-badge">0</span></a></li>
+      </ul>
+      <div class="header__cart__price">Giỏ hàng: <span class="cart-total-price">0₫</span></div>
+    </div>
+    <nav class="humberger__menu__nav">
+      <ul>
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="shop-grid.html">Cửa Hàng</a></li>
+        <li><a href="shoping-cart.html">Giỏ Hàng</a></li>
+        <li class="active"><a href="checkout.html">Thanh Toán</a></li>
+        <li><a href="blog.html">Bài Viết</a></li>
+        <li><a href="contact.html">Liên Hệ</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <div class="header__top__left">
+              <ul>
+                <li><i class="fa fa-envelope"></i> contact@organiwax.vn</li>
+                <li>Miễn phí vận chuyển cho đơn hàng từ 300.000₫</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="header__top__right">
+              <div class="header__top__right__social">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </div>
+              <div class="header__top__right__language">
+                <img src="Images/vietnam-flag.svg" alt="Tiếng Việt">
+                <div>Tiếng Việt</div>
+                <span class="fa fa-angle-down"></span>
+                <ul>
+                  <li><a href="#">Tiếng Việt</a></li>
+                  <li><a href="#">English</a></li>
+                </ul>
+              </div>
+              <div class="header__top__right__auth">
+                <a href="contact.html"><i class="fa fa-user"></i> Đăng Nhập</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-3 col-md-4">
+          <div class="header__logo">
+            <a href="index.html"><img src="Images/logo.svg" alt="OrganiWax"></a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-8">
+          <nav class="header__menu">
+            <ul>
+              <li><a href="index.html">Trang Chủ</a></li>
+              <li><a href="shop-grid.html">Cửa Hàng</a></li>
+              <li class="active">
+                <a href="#">Trang <i class="fa fa-angle-down"></i></a>
+                <ul class="header__menu__dropdown">
+                  <li><a href="shop-details.html?id=5">Chi Tiết Sản Phẩm</a></li>
+                  <li><a href="shoping-cart.html">Giỏ Hàng</a></li>
+                  <li><a href="checkout.html">Thanh Toán</a></li>
+                  <li><a href="blog-details.html">Chi Tiết Blog</a></li>
+                </ul>
+              </li>
+              <li><a href="blog.html">Bài Viết</a></li>
+              <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-3">
+          <div class="header__cart">
+            <ul>
+              <li><a href="shop-grid.html"><i class="fa fa-heart"></i> <span class="wishlist-count-badge">0</span></a></li>
+              <li><a href="shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span class="cart-count-badge">0</span></a></li>
+            </ul>
+            <div class="header__cart__price">Giỏ hàng: <span class="cart-total-price">0₫</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="humberger__open">
+        <i class="fa fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb Section Begin -->
+  <section class="breadcrumb-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="breadcrumb__text">
+            <h2>Thanh Toán Đơn Hàng</h2>
+            <div class="breadcrumb__option">
+              <a href="index.html">Trang Chủ</a>
+              <span>Thanh Toán</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Breadcrumb Section End -->
+
+  <!-- Checkout Section Begin -->
+  <section class="checkout spad">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h6>
+            <span class="fa fa-tag" style="color: #7fad39; margin-right: 6px;"></span>
+            Bạn có mã ưu đãi? <a href="shoping-cart.html">Nhấp vào đây</a> để nhập mã voucher giảm giá trước khi thanh toán.
+          </h6>
+        </div>
+      </div>
+      <div class="checkout__form">
+        <h4>Thông Tin Giao Hàng & Hóa Đơn</h4>
+        <form onsubmit="submitOrder(event)">
+          <div class="row">
+            <!-- Left: Customer Info Form -->
+            <div class="col-lg-8 col-md-6">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="checkout__input">
+                    <p>Họ và Tên<span>*</span></p>
+                    <input type="text" id="custName" placeholder="Nguyễn Văn A" required>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="checkout__input">
+                    <p>Số Điện Thoại Nhận Hàng<span>*</span></p>
+                    <input type="tel" id="custPhone" placeholder="0987 654 321" required>
+                  </div>
+                </div>
+              </div>
+              <div class="checkout__input">
+                <p>Địa Chỉ Email<span>*</span></p>
+                <input type="email" id="custEmail" placeholder="email@example.com" required>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="checkout__input">
+                    <p>Tỉnh / Thành Phố<span>*</span></p>
+                    <input type="text" value="TP. Hồ Chí Minh" required>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="checkout__input">
+                    <p>Quận / Huyện<span>*</span></p>
+                    <input type="text" placeholder="Quận 1 / Quận Bình Thạnh..." required>
+                  </div>
+                </div>
+              </div>
+              <div class="checkout__input">
+                <p>Địa Chỉ Cụ Thể (Số nhà, tên đường, phường/xã)<span>*</span></p>
+                <input type="text" id="custAddress" placeholder="123 Đường Lê Lợi, Phường Bến Nghé" required>
+              </div>
+              <div class="checkout__input">
+                <p>Ghi Chú Đơn Hàng (Tùy chọn)</p>
+                <textarea placeholder="Ghi chú thêm về thời gian giao hàng, viết thiệp mừng sinh nhật kèm nơ quà..."></textarea>
+              </div>
+            </div>
+
+            <!-- Right: Order Summary & Payment -->
+            <div class="col-lg-4 col-md-6">
+              <div class="checkout__order">
+                <h4>Đơn Hàng Của Bạn</h4>
+                <div class="checkout__order__products" style="display: flex; justify-content: space-between; border-bottom: 2px solid #e1e1e1; padding-bottom: 10px;">
+                  <b>Sản Phẩm</b> <b>Thành Tiền</b>
+                </div>
+                <ul id="checkoutOrderItems">
+                  <!-- Dynamically rendered -->
+                </ul>
+                <div class="checkout__order__subtotal">
+                  Tạm tính <span id="checkoutSubtotal">0₫</span>
+                </div>
+                <div class="checkout__order__subtotal" style="color: #7fad39; border-top: none; margin-top: 0;">
+                  Giảm giá voucher <span id="checkoutDiscount">0₫</span>
+                </div>
+                <div class="checkout__order__subtotal" style="border-top: none; margin-top: 0;">
+                  Phí giao hàng <span id="checkoutShipping">Miễn phí</span>
+                </div>
+                <div class="checkout__order__total">
+                  Tổng thanh toán <span id="checkoutTotal">0₫</span>
+                </div>
+
+                <!-- Payment Methods -->
+                <div style="margin-bottom: 20px;">
+                  <b>Phương Thức Thanh Toán:</b>
+                </div>
+                <div class="checkout__input__checkbox">
+                  <label>
+                    <input type="radio" name="paymentMethod" value="cod" checked onchange="togglePaymentMethod('cod')">
+                    Thanh toán khi nhận hàng (COD)
+                  </label>
+                </div>
+                <div class="checkout__input__checkbox">
+                  <label>
+                    <input type="radio" name="paymentMethod" value="bank" onchange="togglePaymentMethod('bank')">
+                    Chuyển khoản Ngân hàng / Quét mã VietQR
+                  </label>
+                </div>
+
+                <div id="bankTransferInfo" class="bank-transfer-box">
+                  <h6 style="color: #0052cc; font-weight: 800; margin-bottom: 8px;">QUÉT MÃ VIETQR ĐỂ THANH TOÁN</h6>
+                  <img src="Images/qr-code.svg" alt="VietQR Code OrganiWax">
+                  <p style="font-size: 12px; margin-bottom: 4px;"><b>Ngân hàng:</b> MB Bank (Quân Đội)</p>
+                  <p style="font-size: 12px; margin-bottom: 4px;"><b>Số tài khoản:</b> 9999.8888.6868</p>
+                  <p style="font-size: 12px; margin-bottom: 0;"><b>Chủ TK:</b> TIEM SAP THOM ORGANIWAX</p>
+                </div>
+
+                <div class="checkout__input__checkbox" style="margin-top: 15px;">
+                  <label>
+                    <input type="checkbox" checked required>
+                    Tôi đồng ý với điều khoản & chính sách giao hàng
+                  </label>
+                </div>
+
+                <button type="submit" class="site-btn" style="width: 100%; margin-top: 15px;">ĐẶT HÀNG NGAY</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Checkout Section End -->
+
+  <!-- Order Success Modal Popup -->
+  <div id="orderSuccessModal" class="modal-overlay">
+    <div class="modal-box">
+      <div style="font-size: 55px; color: #7fad39; margin-bottom: 10px;">🎉</div>
+      <h3 style="color: #1c1c1c; font-weight: 800; margin-bottom: 10px;">ĐẶT HÀNG THÀNH CÔNG!</h3>
+      <p style="color: #6f6f6f; font-size: 14px;">Cảm ơn bạn đã tin tưởng mua sắm tại <b>OrganiWax</b>. Nhân viên tư vấn sẽ liên hệ xác nhận đơn hàng của bạn trong vòng 15 phút.</p>
+      <div style="background: #fdfbf7; padding: 15px; border-radius: 6px; border: 1px dashed #7fad39; margin-bottom: 20px;">
+        <p style="margin: 0; font-size: 14px;">Mã đơn hàng: <b id="modalOrderId" style="color: #7fad39; font-size: 18px;">WAX123456</b></p>
+      </div>
+      <button class="primary-btn" onclick="closeModal()">TIẾP TỤC MUA SẮM</button>
+    </div>
+  </div>
+
+  <!-- Footer Section Begin -->
+  <footer class="footer spad">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="footer__about">
+            <div class="footer__about__logo">
+              <a href="index.html"><img src="Images/logo.svg" alt="OrganiWax" style="width: 190px;"></a>
+            </div>
+            <ul>
+              <li><b>Địa chỉ:</b> 123 Đường Hương Sắc, Quận 1, TP. Hồ Chí Minh</li>
+              <li><b>Hotline:</b> +84 987 654 321</li>
+              <li><b>Email:</b> support@organiwax.vn</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+          <div class="footer__widget">
+            <h6>Liên Kết Nhanh</h6>
+            <ul>
+              <li><a href="index.html">Về Chúng Tôi</a></li>
+              <li><a href="shop-grid.html">Cửa Hàng Sáp Thơm</a></li>
+              <li><a href="shoping-cart.html">Giỏ Hàng An Toàn</a></li>
+              <li><a href="checkout.html">Giao Hàng & Đổi Trả</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <div class="footer__widget">
+            <h6>Bản Tin Khuyến Mãi</h6>
+            <p>Đăng ký nhận mã voucher 20% cho đơn hàng tiếp theo.</p>
+            <form onsubmit="event.preventDefault(); showToast('Đăng ký nhận voucher thành công!');">
+              <input type="email" placeholder="Email của bạn..." required>
+              <button type="submit" class="site-btn">ĐĂNG KÝ</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="footer__copyright">
+            <div class="footer__copyright__text">
+              <p>Bản quyền &copy; 2026 <b>OrganiWax</b>. Tất cả quyền được bảo lưu.</p>
+            </div>
+            <div class="footer__copyright__payment">
+              <img src="Images/payment-methods.svg" alt="Cổng thanh toán">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="cartToast" class="toast-msg"></div>
+  <script src="Scripts/cart.js"></script>
+  <script src="Scripts/main.js"></script>
+</body>
+</html>

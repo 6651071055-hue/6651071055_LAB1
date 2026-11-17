@@ -1,0 +1,40 @@
+/*!
+ * Font Awesome 4.7.0 (Organi Clean Edition)
+ */
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 sans-serif;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-phone:before { content: "📞"; }
+.fa-envelope:before { content: "✉️"; }
+.fa-user:before { content: "👤"; }
+.fa-heart:before { content: "♥"; }
+.fa-shopping-bag:before { content: "🛍️"; }
+.fa-bars:before { content: "☰"; }
+.fa-search:before { content: "🔍"; }
+.fa-angle-down:before { content: "▼"; font-size: 10px; }
+.fa-angle-right:before { content: "›"; font-weight: bold; }
+.fa-angle-left:before { content: "‹"; font-weight: bold; }
+.fa-arrow-right:before { content: "→"; }
+.fa-retweet:before { content: "👁️"; }
+.fa-star:before { content: "★"; color: #edbb0e; }
+.fa-star-half-o:before { content: "★"; color: #edbb0e; }
+.fa-star-o:before { content: "☆"; color: #ccc; }
+.fa-calendar-o:before { content: "📅"; }
+.fa-comment-o:before { content: "💬"; }
+.fa-map-marker:before { content: "📍"; }
+.fa-clock-o:before { content: "🕒"; }
+.fa-facebook:before { content: "f"; font-family: monospace; font-weight: bold; }
+.fa-instagram:before { content: "📸"; }
+.fa-pinterest:before { content: "P"; font-family: monospace; font-weight: bold; }
+.fa-twitter:before { content: "𝕏"; }
+.fa-trash-o:before { content: "🗑️"; }
+.fa-close:before { content: "✕"; }
+.fa-check:before { content: "✓"; }
+.fa-play:before { content: "▶"; }
+.fa-tag:before { content: "🏷️"; }
+.fa-th:before { content: "⊞"; }
